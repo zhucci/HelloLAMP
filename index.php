@@ -110,13 +110,13 @@ $size=3;
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     print "Post";
      print "<br>"; 
-   /* Get mouse coordinates
+   /* Get mouse coordinates*/
     $x=$_POST['sub_x'];
     $y=$_POST['sub_y'];
     
   print "Координыты  x= $x,y= $y ";
   print "<br>"; 
-  /* Get the nearest node among all 
+  /* Get the nearest node among all */
    $nearNode;
    $maxDelta=300;
     foreach($Nodes as $id=>$femNode){
