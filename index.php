@@ -110,11 +110,13 @@ $size=3;
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     print "Post";
      print "<br>"; 
-   
+   /* Get mouse coordinates
     $x=$_POST['sub_x'];
     $y=$_POST['sub_y'];
+    
   print "Координыты  x= $x,y= $y ";
-   print "<br>"; 
+  print "<br>"; 
+  /* Get the nearest node among all 
    $nearNode;
    $maxDelta=300;
     foreach($Nodes as $id=>$femNode){
@@ -131,7 +133,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
        $x2=$x1+20;
       $y2=$y1+20;
   imagerectangle($img,$x1,$y1,$x2,$y2,$text_color);
-    print "Был выбран узел с номером $nearNode ";
+    print "Node $nearNode ";
  }
  else 
    print "Get";
